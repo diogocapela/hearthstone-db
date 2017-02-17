@@ -1,5 +1,5 @@
 {
-  "name": "Hearthstone DB",
+  "name": "hearthstone-db",
   "version": "1.0.0",
   "description": "Hearthstone cards database.",
   "main": "server.js",
