@@ -1,0 +1,35 @@
+{{#if img}}
+
+{{#if rarity}}
+
+<tr>
+	<td><a href="/card/{{name}}">{{name}}</a></td>
+	<td><a href="/set/{{cardSet}}">{{cardSet}}</a></td>
+	<td><a href="/type/{{type}}">{{type}}</a></td>
+	<td><a href="/rarity/{{rarity}}">{{rarity}}</a></td>
+	<td><a href="/class/{{playerClass}}">{{playerClass}}</a></td>
+	<td>
+	{{#if cost}}
+	<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/mana-crystal.png"> {{cost}}
+	{{else}}
+	{{/if}}
+	</td>
+	<td>
+	{{#if attack}}
+	<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/attack.png"> {{attack}}
+	{{else}}
+	{{/if}}
+	</td>
+	<td>
+	{{#if health}}
+	<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/health.png"> {{health}}
+	{{else}}
+	{{/if}}
+	</td>
+</tr>
+
+{{else}}
+{{/if}}
+
+{{else}}
+{{/if}}

@@ -1,0 +1,104 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Hearthstone DB</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Set <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/set/Basic">Basic</a></li>
+            <li><a href="/set/Classic">Classic</a></li>
+            <li><a href="/set/Naxxramas">Naxxramas</a></li>
+            <li><a href="/set/Goblins%20vs%20Gnomes">Goblins vs Gnomes</a></li>
+            <li><a href="/set/Blackrock%20Mountain">Blackrock Mountain</a></li>
+            <li><a href="/set/The%20Grand%20Tournament">The Grand Tournament</a></li>
+            <li><a href="/set/The%20League%20of%20Explorers">The League of Explorers</a></li>
+            <li><a href="/set/Whispers%20of%20the%20Old%20Gods">Whispers of the Old Gods</a></li>
+            <li><a href="/set/Karazhan">Karazhan</a></li>
+            <li><a href="/set/Mean%20Streets%20of%20Gadgetzan">Mean Streets of Gadgetzan</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/set/Promo">Promo</a></li>
+            <li><a href="/set/Reward">Reward</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/set/Tavern%20Brawl">Tavern Brawl</a></li>
+            <li><a href="/set/Hero%20Skins">Hero Skins</a></li>
+            <li><a href="/set/Missions">Missions</a></li>
+            <li><a href="/set/Credits">Credits</a></li>
+            <li><a href="/set/System">System</a></li>
+            <li><a href="/set/Debug">Debug</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Class <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/class/Druid">Druid</a></li>
+            <li><a href="/class/Hunter">Hunter</a></li>
+            <li><a href="/class/Mage">Mage</a></li>
+            <li><a href="/class/Paladin">Paladin</a></li>
+            <li><a href="/class/Priest">Priest</a></li>
+            <li><a href="/class/Rogue">Rogue</a></li>
+            <li><a href="/class/Shaman">Shaman</a></li>
+            <li><a href="/class/Warlock">Warlock</a></li>
+            <li><a href="/class/Warrior">Warrior</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/class/Neutral">Neutral</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Type <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/type/Minion">Minion</a></li>
+            <li><a href="/type/Spell">Spell</a></li>
+            <li><a href="/type/Weapon">Weapon</a></li>
+            <li><a href="/type/Enchantment">Enchantment</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/type/Hero">Hero</a></li>
+            <li><a href="/type/Hero%20Power">Hero Power</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rarity <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/rarity/Free">Free</a></li>
+            <li><a href="/rarity/Common">Common</a></li>
+            <li><a href="/rarity/Rare">Rare</a></li>
+            <li><a href="/rarity/Epic">Epic</a></li>
+            <li><a href="/rarity/Legendary">Legendary</a></li>
+          </ul>
+        </li>
+
+        <li><a href="/cardbacks">Card Backs</a></li>
+
+        <li><a href="/all-cards">All Cards</a></li>
+
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" id="searchBox" placeholder="Enter a card name">
+          </div>
+          <button type="submit" class="btn btn-default" id="searchBtn" onclick="return searchCard()">Search</button>
+        </form>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/diogocapela/hearthstone-db" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+      </ul>
+
+    </div> <!-- /.navbar-collapse -->
+  </div> <!-- /.container-fluid -->
+</nav>

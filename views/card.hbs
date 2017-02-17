@@ -1,0 +1,125 @@
+{{> header}}
+{{> nav}}
+<div class="container">
+
+	<div class="page-header">
+		<h1>{{name}} <small>Card ID: {{cardId}}</small></h1>
+		<a href="/card/{{cardId}}?locale=enUS"><span class="flag-icon flag-icon-us"></span></a>
+		<a href="/card/{{cardId}}?locale=enGB"><span class="flag-icon flag-icon-gb"></span></a>
+		<a href="/card/{{cardId}}?locale=deDE"><span class="flag-icon flag-icon-de"></span></a>
+		<a href="/card/{{cardId}}?locale=esES"><span class="flag-icon flag-icon-es"></span></a>
+		<a href="/card/{{cardId}}?locale=esMX"><span class="flag-icon flag-icon-mx"></span></a>
+		<a href="/card/{{cardId}}?locale=frFR"><span class="flag-icon flag-icon-fr"></span></a>
+		<a href="/card/{{cardId}}?locale=itIT"><span class="flag-icon flag-icon-it"></span></a>
+		<a href="/card/{{cardId}}?locale=koKR"><span class="flag-icon flag-icon-kr"></span></a>
+		<a href="/card/{{cardId}}?locale=plPL"><span class="flag-icon flag-icon-pl"></span></a>
+		<a href="/card/{{cardId}}?locale=ptBR"><span class="flag-icon flag-icon-br"></span></a>
+		<a href="/card/{{cardId}}?locale=ruRU"><span class="flag-icon flag-icon-ru"></span></a>
+		<a href="/card/{{cardId}}?locale=zhCN"><span class="flag-icon flag-icon-cn"></span></a>
+		<a href="/card/{{cardId}}?locale=zhTW"><span class="flag-icon flag-icon-tw"></span></a>
+		<a href="/card/{{cardId}}?locale=jaJP"><span class="flag-icon flag-icon-jp"></span></a>
+		<a href="/card/{{cardId}}?locale=thTH"><span class="flag-icon flag-icon-th"></span></a>
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-4">
+
+			<div class="jumbotron jumbo-img">
+
+				<img src="{{img}}" class="img-responsive center">
+				<img src="{{imgGold}}" class="img-responsive center">
+
+			</div>
+
+		</div>
+
+		<div class="col-sm-8">
+
+			<div class="jumbotron jumbo-info">
+
+				<h1>Info</h1>
+
+				{{#if name}}
+				<p><b id="cardText">Name:</b> <span id=cardInfo>{{{name}}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if text}}
+				<p><b id="cardText">Text:</b> <span id=cardInfo>{{{text}}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if flavor}}
+				<p><b id="cardText">Flavor:</b> <span id=cardInfo>{{flavor}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if artist}}
+				<p><b id="cardText">Artist:</b> <span id=cardInfo>{{artist}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if playerClass}}
+				<p><b id="cardText">Class:</b> <span id=cardInfo>{{playerClass}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if rarity}}
+				<p><b id="cardText">Rarity:</b> <span id=cardInfo>{{rarity}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if type}}
+				<p><b id="cardText">Type:</b> <span id=cardInfo>{{type}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if race}}
+				<p><b id="cardText">Race:</b> <span id=cardInfo>{{race}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if cost}}
+				<p><b id="cardText">Cost:</b> <span id=cardInfo>{{cost}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if attack}}
+				<p><b id="cardText">Attack:</b> <span id=cardInfo>{{attack}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if health}}
+				<p><b id="cardText">Health:</b> <span id=cardInfo>{{health}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if cardSet}}
+				<p><b id="cardText">Set:</b> <span id=cardInfo>{{cardSet}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if faction}}
+				<p><b id="cardText">Faction:</b> <span id=cardInfo>{{faction}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if howToGet}}
+				<p><b id="cardText">How to Get Normal:</b> <span id=cardInfo>{{howToGet}}</span></p>
+				{{else}}
+				{{/if}}
+
+				{{#if howToGetGold}}
+				<p><b id="cardText">How to Get Golden:</b> <span id=cardInfo>{{howToGetGold}}</span></p>
+				{{else}}
+				{{/if}}
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div> <!-- End of .container -->
+{{> footer}}

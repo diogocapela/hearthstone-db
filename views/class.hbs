@@ -1,0 +1,57 @@
+{{> header}}
+{{> nav}}
+<div class="container">
+
+	<div class="page-header">
+		<h1><b>Class:</b> {{className}}</h1>
+	</div>
+
+	<table id="table-list" class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Set</th>
+				<th>Type</th>
+				<th>Rarity</th>
+				<th>Cost</th>
+				<th>Attack</th>
+				<th>Health</th>
+			</tr>
+		</thead>
+		<tbody>
+
+			{{#each class}}
+
+			<tr>
+				<td><a href="/card/{{name}}">{{name}}</a></td>
+				<td><a href="/set/{{cardSet}}">{{cardSet}}</a></td>
+				<td><a href="/type/{{type}}">{{type}}</a></td>
+				<td><a href="/rarity/{{rarity}}">{{rarity}}</a></td>
+				<td>
+					{{#if cost}}
+					<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/mana-crystal.png"> {{cost}}
+					{{else}}
+					{{/if}}
+				</td>
+				<td>
+					{{#if attack}}
+					<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/attack.png"> {{attack}}
+					{{else}}
+					{{/if}}
+				</td>
+				<td>
+					{{#if health}}
+					<img id="index-icon-img" src="http://hearthstoneapi.com/images/icons/health.png"> {{health}}
+					{{else}}
+					{{/if}}
+				</td>
+
+			</tr>
+
+			{{/each}}
+
+		</tbody>
+	</table>
+
+</div> <!-- End of .container -->
+{{> footer}}

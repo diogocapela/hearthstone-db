@@ -1,0 +1,44 @@
+{{> header}}
+{{> nav}}
+<div class="container">
+
+	<div class="page-header">
+		<h1>Card Backs</h1>
+	</div>
+
+	{{#each body}}
+	{{#if imgAnimated}}
+	<div class="col-sm-3">
+		<div class="jumbotron jumbo-img">
+			<a href="#" data-toggle="modal" data-target="#{{cardBackId}}-modal">
+				<img id="cardback" src="{{imgAnimated}}" class="img-responsive center">
+			</a>
+		</div>
+	</div>
+	{{else}}
+	{{/if}}
+	{{/each}}
+
+	{{#each body}}
+	<div class="modal fade" id="{{cardBackId}}-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">{{name}} Card Back</h4>
+				</div>
+				<div class="modal-body">
+					<p><b>Name:</b><br>{{name}}</p>
+					<p><b>Source:</b><br>{{sourceDescription}}</p>
+					<p><b>Description:</b><br>{{description}}</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{/each}}
+
+</div> <!-- End of .container -->
+{{> footer}}

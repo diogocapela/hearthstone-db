@@ -1,0 +1,36 @@
+
+<footer>made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://diogocapela.com" target="_balnk">diogo capela</a></footer>
+
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap - Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+        function searchCard() {
+
+            var query = document.getElementById('searchBox').value;
+
+            window.location.href = '/search/' + query;
+
+            return false;
+
+        }
+
+        $(document).ready(function() {
+
+    		$('#table-list').DataTable();
+
+		});
+
+    </script>
+  
+  </body>
+</html>
